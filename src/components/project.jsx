@@ -9,8 +9,12 @@ function mapprojects(project) {
       </div>
       <div className="heading-link-div">
         <h4>{project.name}</h4>
-        <a href={project.github} className=" mybtn2" target="_blank">
+        <p className="desc-para">{project.desc}</p>
+        <a href={project.github} className=" mybtn" target="_blank">
           Github
+        </a>
+        <a href={project.live} className=" mybtn" target="_blank">
+         live
         </a>
       </div>
     </article>
@@ -19,10 +23,10 @@ function mapprojects(project) {
 function Project() {
   return (
     <section className="Project-section">
-      <h2 className="text-center">
+      <h2 className="text-center" >
         My Projects <PiProjectorScreenChartFill />
       </h2>
-      <div className="container project-container ">
+      <div className="container ">
         {projects.map(mapprojects)}
       </div>
     </section>

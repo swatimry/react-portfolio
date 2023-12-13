@@ -2,6 +2,7 @@ import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function About() {
+ 
   return (
     <div className="container about-section">
       <div className="aboutclass row">
@@ -19,12 +20,12 @@ function About() {
             </p>
           </div>
 
-          <button className="  mybtn" data-aos="fade-right">
+          <a className="  mybtn" data-aos="fade-right" href="https://drive.google.com/file/d/13yel2Iu6h-KLDXO2wQ0K0aG9KfVxIedR/view?usp=sharing">
             Download CV
-          </button>
-          <button className="  mybtn" data-aos="fade-right">
+          </a>
+          <a className="  mybtn" data-aos="fade-right" href="https://www.linkedin.com/in/swati-457b35229/">
             Contact Me
-          </button>
+          </a>
         </div>
         <div className="  col-lg-4 col-md-12 col-sm-12 d-flex align-items-center img-bg-div">
           <img src="./images/profilepic.png" className="mypic mx-auto "></img>
